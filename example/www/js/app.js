@@ -1,9 +1,9 @@
-angular.module('starter', ['ionic', 'ionic.contrib.ui.hslider'])
+angular.module('starter', ['ionic', 'ionic.contrib.ui.hscrollcards'])
 
 
   
 
-.controller('SliderCtrl', function($scope) {
+.controller('ExampleCtrl', function($scope) {
 
   $scope.items = [];
 

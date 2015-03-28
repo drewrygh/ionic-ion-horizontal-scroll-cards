@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     
-    <title>Ionic | Horizontal Slider</title>
+    <title>Ionic | Horizontal Scroll Cards</title>
     <!-- Ionic -->
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <script src="lib/ionic/js/ionic.bundle.js"></script>
-    <!-- Ion: SpotifySlider -->
-    <script src="js/ionic.hslider.js"></script>
-    <link href="css/hslider.min.css" rel="stylesheet">
+    <!-- Ion: Horizontal Scroll Cards -->
+    <script src="js/ionic.hscrollcards.js"></script>
+    <link href="css/hscrollcards.min.css" rel="stylesheet">
+    
     <!-- Your static files -->
     <script src="js/app.js"></script>
     <link rel="stylesheet" href="css/style.min.css">
@@ -20,16 +21,16 @@
   </head>
   <body ng-app="starter" class="slide-left-right-ios7">
 
-    <ion-pane ng-controller="SliderCtrl">
+    <ion-pane ng-controller="ExampleCtrl">
 
 
       <ion-header-bar class="bar-positive">
-        <h1 class="title">Horizontal Slider Demo</h1>
+        <h1 class="title">Horizontal Scroll Cards Demo</h1>
       </ion-header-bar>
 
-      <hslider>
+      <hscroller>
         <hcard ng-repeat="item in items" index="{{$index}}" desc="{{item.desc}}" image="{{item.image}}"></hcard>
-      </hslider>
+      </hscroller>
 
     </ion-pane>
 

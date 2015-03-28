@@ -1,20 +1,20 @@
 
-$hslider-lateral-padding: 10px !default;
-$hslider-card-height: 160px !default;
-$hslider-card-width: 120px !default;
-$hslider-image-height: 120px !default;
-$hslider-image-width: 120px !default;
-$hslider-card-animate-time: 0.4s !default;
-$hslider-cards-to-animate: 12 !default;
+$hscroller-lateral-padding: 10px !default;
+$hscroller-card-height: 160px !default;
+$hscroller-card-width: 120px !default;
+$hscroller-image-height: 120px !default;
+$hscroller-image-width: 120px !default;
+$hscroller-card-animate-time: 0.4s !default;
+$hscroller-cards-to-animate: 12 !default;
 
 
 
-div.hslider{
+div.hscroller{
 
 	white-space: nowrap;
 	overflow-y: hidden;
 	overflow-x: scroll;
-	padding-left: $hslider-lateral-padding;
+	padding-left: $hscroller-lateral-padding;
 
 	-webkit-overflow-scrolling: touch;
 	-webkit-tap-highlight-color:rgba(0,0,0,0);
@@ -24,20 +24,20 @@ div.hslider{
 
 }
 
-div.hslider-card{
-	width: $hslider-card-width;
-	height: $hslider-card-height;
+div.hscroller-card{
+	width: $hscroller-card-width;
+	height: $hscroller-card-height;
 	display: inline-block;
 	background-color: #262626;
 	vertical-align: middle;
 	margin: 0 2px;
 
 	img{
-		height: $hslider-image-height;
-		width: $hslider-image-width;
+		height: $hscroller-image-height;
+		width: $hscroller-image-width;
 	}
 
-	div.hslider-label{
+	div.hscroller-label{
 		font-family: "Helvetica Neue", "Roboto", Helvetica, sans-serif;
 		font-size: 11px;
 		line-height: 14px;
@@ -46,26 +46,26 @@ div.hslider-card{
 		margin: 0;
 		word-wrap: break-word;
 		white-space: normal;
-		height: calc($hslider-card-height - $hslider-image-height);
+		height: calc($hscroller-card-height - $hscroller-image-height);
 	}
 
-	&:last-child {margin-right: $hslider-lateral-padding;}
+	&:last-child {margin-right: $hscroller-lateral-padding;}
 }
 
 
 @media screen and (min-width:1025px){
-	div.hslider{
+	div.hscroller{
 		overflow-x: hidden;
 	}
 }
 
 $i: 1;
-@while $i < $hslider-cards-to-animate {
-  div.hslider-card-animated-#{$i}{
-  	animation: fadein $hslider-card-animate-time * $i;
-	-moz-animation: fadein $hslider-card-animate-time * $i; /* Firefox */
-	-webkit-animation: fadein $hslider-card-animate-time * $i; /* Safari and Chrome */
-	-o-animation: fadein $hslider-card-animate-time * $i; /* Opera */
+@while $i < $hscroller-cards-to-animate {
+  div.hscroller-card-animated-#{$i}{
+  	animation: fadein $hscroller-card-animate-time * $i;
+	-moz-animation: fadein $hscroller-card-animate-time * $i; /* Firefox */
+	-webkit-animation: fadein $hscroller-card-animate-time * $i; /* Safari and Chrome */
+	-o-animation: fadein $hscroller-card-animate-time * $i; /* Opera */
   }
   $i: $i + 1;
 }
