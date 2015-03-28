@@ -1,0 +1,11 @@
+{
+  "name": "example",
+  "app_id": "",
+  "browsers": [
+    {
+      "platform": "android",
+      "browser": "crosswalk",
+      "version": "11.40.277.7"
+    }
+  ]
+}

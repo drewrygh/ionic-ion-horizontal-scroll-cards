@@ -1,0 +1,104 @@
+
+$hslider-lateral-padding: 10px !default;
+$hslider-card-height: 160px !default;
+$hslider-card-width: 120px !default;
+$hslider-image-height: 120px !default;
+$hslider-image-width: 120px !default;
+$hslider-card-animate-time: 0.4s !default;
+$hslider-cards-to-animate: 12 !default;
+
+
+
+div.hslider{
+
+	white-space: nowrap;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	padding-left: $hslider-lateral-padding;
+
+	-webkit-overflow-scrolling: touch;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	&::-webkit-scrollbar{
+		display:none;
+	}
+
+}
+
+div.hslider-card{
+	width: $hslider-card-width;
+	height: $hslider-card-height;
+	display: inline-block;
+	background-color: #262626;
+	vertical-align: middle;
+	margin: 0 2px;
+
+	img{
+		height: $hslider-image-height;
+		width: $hslider-image-width;
+	}
+
+	div.hslider-label{
+		font-family: "Helvetica Neue", "Roboto", Helvetica, sans-serif;
+		font-size: 11px;
+		line-height: 14px;
+		padding: 0 0.5em;
+		color: #fff;
+		margin: 0;
+		word-wrap: break-word;
+		white-space: normal;
+		height: calc($hslider-card-height - $hslider-image-height);
+	}
+
+	&:last-child {margin-right: $hslider-lateral-padding;}
+}
+
+
+@media screen and (min-width:1025px){
+	div.hslider{
+		overflow-x: hidden;
+	}
+}
+
+$i: 1;
+@while $i < $hslider-cards-to-animate {
+  div.hslider-card-animated-#{$i}{
+  	animation: fadein $hslider-card-animate-time * $i;
+	-moz-animation: fadein $hslider-card-animate-time * $i; /* Firefox */
+	-webkit-animation: fadein $hslider-card-animate-time * $i; /* Safari and Chrome */
+	-o-animation: fadein $hslider-card-animate-time * $i; /* Opera */
+  }
+  $i: $i + 1;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}

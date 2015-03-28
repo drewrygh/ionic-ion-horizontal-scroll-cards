@@ -1,0 +1,9 @@
+body, html {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto; }
+
+div.hslider {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
