@@ -8,7 +8,7 @@ A mobile UI component for horizontal scroll cards. Based loosely off of Spotify'
 *(note: Chrome/Firefox [DevTools](https://developer.chrome.com/devtools/docs/device-mode) must be used to emulate a mobile device when viewing the Codepen example.)*
 
 #### Installation
-```
+```bash
 # via bower:
 bower install ionic-ion-horizontal-scroll-cards
 
@@ -17,7 +17,7 @@ ionic start myProject http://codepen.io/drewrygh/pen/jEJGLx
 ```
 
 #### Usage
-```
+```html
 <!-- 1.) Include these and make sure the path is correct: -->
 <link href="../path/to/css/hscrollcards.min.css" rel="stylesheet">
 <script src="../path/to/js/ionic.hscrollcards.js"></script>
@@ -29,7 +29,7 @@ ionic start myProject http://codepen.io/drewrygh/pen/jEJGLx
 ```
 
 #### Customizing with SASS
-```
+```sass
 // Below are the defaults for variables that can be overridden:
 $hscroller-lateral-padding: 10px;
 $hscroller-card-height: 160px;
