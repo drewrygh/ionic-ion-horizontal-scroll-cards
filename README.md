@@ -4,7 +4,7 @@ A mobile UI component for horizontal scroll cards. Based loosely off of Spotify'
 
 #### Examples: 
 - [Ionic Horizontal Scroll Cards](http://drewrygh.com/ionic-horizontal-scroll-cards/)
-- [Ionic Horizontal Scroll Cards on Codepen](http://drewrygh.com/ionic-horizontal-scroll-cards/)
+- [Ionic Horizontal Scroll Cards on Codepen](http://codepen.io/drewrygh/pen/jEJGLx)
 *(note: Chrome/Firefox [DevTools](https://developer.chrome.com/devtools/docs/device-mode) must be used to emulate a mobile device when viewing the Codepen example.)*
 
 #### Installation
